@@ -1,5 +1,7 @@
 # dsh-subagent-model-notes
 
+[![test](https://github.com/097794/dsh-subagent-model-notes/actions/workflows/test.yml/badge.svg)](https://github.com/097794/dsh-subagent-model-notes/actions/workflows/test.yml)
+
 给 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)（DSH）的子智能体委派加一层「按模型写说明」：在官方 **子智能体** 设置页旁新增一页，保存后的说明会进入 Agent 派生子智能体时的系统提示，让它按你的计划选模型。
 
 ```

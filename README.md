@@ -1,5 +1,7 @@
 # dsh-subagent-model-notes
 
+[![test](https://github.com/097794/dsh-subagent-model-notes/actions/workflows/test.yml/badge.svg)](https://github.com/097794/dsh-subagent-model-notes/actions/workflows/test.yml)
+
 Per-model notes for **subagent delegation** in [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (DSH): a settings page beside the official **Subagent** page, and the same notes injected into the delegating agent's system prompt so it can pick the child model you planned.
 
 ```
