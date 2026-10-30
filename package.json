@@ -1,0 +1,65 @@
+{
+  "name": "dsh-subagent-model-notes",
+  "version": "0.1.0",
+  "description": "Per-model notes for subagent delegation in DeepSeek Harness: a settings page beside the official Subagent page, and the same notes injected into the delegating agent's system prompt.",
+  "license": "MIT",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "locale",
+    "cordis.patch.yml",
+    "README.md",
+    "README.zh.md",
+    "CHANGELOG.md",
+    "LICENSE",
+    "icon.svg"
+  ],
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "dsh-plugin",
+    "plugin",
+    "subagent",
+    "model-selection",
+    "system-prompt"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/097794/dsh-subagent-model-notes.git"
+  },
+  "homepage": "https://github.com/097794/dsh-subagent-model-notes#readme",
+  "bugs": {
+    "url": "https://github.com/097794/dsh-subagent-model-notes/issues"
+  },
+  "author": "097794",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-settings",
+        "@deepseek-ai/dsh-client-ui-plugin-manager",
+        "@deepseek-ai/dsh-api-remotes"
+      ]
+    }
+  },
+  "engines": {
+    "node": ">=22.19.0",
+    "dsh": ">=0.2.1-rc.1 <0.3.0-0"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/schemastery": "~3.18.4"
+  }
+}

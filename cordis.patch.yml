@@ -1,0 +1,11 @@
+# dsh-subagent-model-notes bundle layer.
+#
+# The row owns one settings namespace with a volatile `notes` field. The same
+# package ships the browser page that edits it: a custom `plugins.item` entry
+# rendered in the Plugins page's "Built-in plugin settings" list right after
+# the official Subagent page.
+- insert:
+    - id: subagent-model-notes
+      name: dsh-subagent-model-notes
+      config:
+        notes: []

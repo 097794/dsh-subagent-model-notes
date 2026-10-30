@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Subagent model notes",
+    "description": "Write one note per model beside the Subagent settings page; the delegating agent reads the notes and picks the child model accordingly."
+  }
+}
